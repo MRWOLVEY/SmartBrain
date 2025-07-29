@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradiant1 {
+    background: linear-gradient(
+      to right,
+      rgb(254, 72, 118) 10%,
+      rgb(170, 86, 189) 100%
+    );
+  }
+}
