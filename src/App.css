@@ -36,3 +36,37 @@ body {
   height: 100%;
   z-index: -1; /* Ensure particles are behind other content */
 }
+.custom-form-bg1 {
+  background-color: rgba(20, 20, 30, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.custom-form-bg2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* .custom-form-bg2 input:focus { */
+/* background-color: rgba(255, 255, 255, 0.1); */
+/* border: 1px solid rgba(255, 255, 255, 0.2); */
+/* border: 1px solid rgb(142, 22, 22); */
+/* box-shadow: none; */
+/* } */
+
+.form-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}

@@ -1,12 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "./Context";
 
-const FaceRecognition = ({ url }) => {
+const FaceRecognition = () => {
   const { state } = useContext(Context);
-
-  useEffect(() => {
-    // console.log(state.boxes);
-  }, [state]);
 
   return (
     <div className="flex justify-center">

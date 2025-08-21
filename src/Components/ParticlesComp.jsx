@@ -23,7 +23,7 @@ const ParticlesComp = (props) => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    // console.log(container);
   };
 
   const options = useMemo(
@@ -63,7 +63,7 @@ const ParticlesComp = (props) => {
         detectsOn: "window",
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onDiv: {
