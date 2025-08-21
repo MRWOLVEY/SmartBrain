@@ -25,9 +25,9 @@ const Login = () => {
     if (result.ok) {
       dispatch({
         type: actions.LOGIN,
-        payload: result,
+        payload: result.message,
       });
-      getProfile(result);
+      getProfile(result.message);
       navigate("/");
     } else {
       throw new Error("wrong credentials");
@@ -46,7 +46,7 @@ const Login = () => {
     if (profile.ok) {
       dispatch({
         type: actions.SET_PROFILE,
-        payload: profile,
+        payload: profile.message,
       });
     }
   };
