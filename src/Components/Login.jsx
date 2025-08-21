@@ -12,7 +12,7 @@ const Login = () => {
   const [showMsg, setShowMsg] = useState(false);
 
   const login = async (email, password) => {
-    const data = await fetch("http://localhost:3000/login", {
+    const data = await fetch("https://smartbrainbe-uc8o.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const Login = () => {
     }
   };
   const getProfile = async (id) => {
-    const data = await fetch("http://localhost:3000/profile", {
+    const data = await fetch("https://smartbrainbe-uc8o.onrender.com/profile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

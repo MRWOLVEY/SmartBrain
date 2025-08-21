@@ -32,7 +32,7 @@ const ImageLinkForm = () => {
       body: raw,
     };
 
-    fetch("http://192.168.1.12:5000/detect_faces", requestOptions)
+    fetch("https://facedet.onrender.com/detect_faces", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         const regions = result;
@@ -53,7 +53,7 @@ const ImageLinkForm = () => {
 
             dispatch({ type: actions.SET_BOXES, payload: box });
           });
-          fetch("http://localhost:3000/image", {
+          fetch("https://smartbrainbe-uc8o.onrender.com/image", {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
